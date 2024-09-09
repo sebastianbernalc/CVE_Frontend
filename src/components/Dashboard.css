@@ -1,0 +1,105 @@
+
+.bg-custom-background {
+  background-color: #1a202c; /* Color de fondo oscuro */
+  position: relative;
+  overflow: hidden; /* Asegura que los gradientes no se desborden */
+}
+
+.bg-custom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  right: 0;
+  top: -10%;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-side, rgba(255, 0, 182, 0.15), rgba(255, 255, 255, 0));
+}
+
+.bg-custom-gradient-right {
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  top: -10%;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle farthest-side, rgba(255, 0, 182, 0.15), rgba(255, 255, 255, 0));
+}
+
+.dashboard-content {
+  max-width: 1200px; /* Ajusta según sea necesario */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto; /* Permite scroll vertical */
+  height: calc(100vh - 40px); /* Ajusta la altura para permitir el scroll */
+  box-sizing: border-box; /* Asegura que el padding se incluya en la altura */
+}
+
+
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh; /* Ajusta la altura máxima del modal */
+  overflow: auto; /* Permite el scroll si el contenido excede la altura máxima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-table {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Permite scroll horizontal si la tabla es muy ancha */
+}
+
+.modal-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-table th, .modal-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.modal-chart {
+  width: 100%;
+}

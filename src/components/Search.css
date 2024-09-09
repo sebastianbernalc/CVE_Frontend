@@ -1,0 +1,97 @@
+.bg-custom-background {
+    background-color: #1a202c; /* Color de fondo oscuro */
+    position: relative;
+    overflow: hidden; /* Asegura que los gradientes no se desborden */
+  }
+  
+
+  
+  .bg-custom-gradient-right {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+    top: -10%;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-side, rgba(255, 0, 182, 0.15), rgba(255, 255, 255, 0));
+  }
+  
+  .cve-info-container {
+    position: relative;
+    max-width: 1200px; /* Ajusta según sea necesario */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto; /* Permite scroll vertical */
+    height: calc(100vh - 40px); /* Ajusta la altura para permitir el scroll */
+    box-sizing: border-box; /* Asegura que el padding se incluya en la altura */
+    text-align: center; /* Centra el contenido */
+    background-color: #1a202c; /* Fondo consistente */
+  }
+  
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3748; /* Fondo de la tabla */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow-x: auto; /* Permite scroll horizontal si la tabla es muy ancha */
+    max-width: 100%; /* Asegura que la tabla no se desborde */
+    color: #e2e8f0;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2d3748; /* Fondo de la tabla */
+    border: 1px solid #4a5568; /* Borde de la tabla */
+  }
+  
+  .table-container th, .table-container td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #e2e8f0; /* Color del texto */
+  }
+  
+  .table-container th {
+    background-color: #4a5568; /* Fondo de los encabezados */
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f56565; /* Color del botón */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #ffffff;
+  }
+
+  .center-link {
+    text-align: center;
+    padding-bottom: 200px;
+  }
